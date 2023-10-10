@@ -8,10 +8,10 @@
 
 
     <TextView
-        android:id="@+id/marvel_generator_header"
+        android:id="@+id/kitty_generator_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Marvel Character Generator!"
+        android:text="Kitty Generator!"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,20 +26,20 @@
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="300dp"
-        android:src="@drawable/rdj"
+        android:src="@drawable/kitty"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/marvel_generator_header"
+        app:layout_constraintTop_toBottomOf="@id/kitty_generator_header"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/get_random_marvel_character"
+        android:id="@+id/get_random_kitty"
         android:layout_width="220dp"
 
         android:layout_height="110dp"
         android:layout_marginStart="92dp"
-        android:text="Get random marvel character"
+        android:text="Get a random picture of a kitten"
         android:textSize="25dp"
         android:backgroundTint="@color/french_rose"
         app:layout_constraintStart_toStartOf="parent"
