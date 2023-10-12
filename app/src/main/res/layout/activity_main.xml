@@ -35,7 +35,7 @@
 
     <Button
         android:id="@+id/get_random_rick_and_morty_pic"
-        android:layout_width="220dp"
+        android:layout_width="300dp"
 
         android:layout_height="110dp"
         android:layout_marginStart="92dp"

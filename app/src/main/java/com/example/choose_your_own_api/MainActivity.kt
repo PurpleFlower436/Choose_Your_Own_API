@@ -28,6 +28,9 @@ class MainActivity : AppCompatActivity() {
         val button: Button = findViewById<Button>(R.id.get_random_rick_and_morty_pic)
         val imageView = findViewById<ImageView>(R.id.rick_and_morty_pic)
 
+        getNextImage(button, imageView)
+
+
     }
 
 
@@ -45,7 +48,7 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun getRick_and_morty_Pic() {
-        var randomInt = Random.nextInt()
+        var randomInt = Random.nextInt(827)
         val client = AsyncHttpClient()
         val characterJson = "https://rickandmortyapi.com/api/character/" + randomInt
         client[characterJson, object : JsonHttpResponseHandler() {
