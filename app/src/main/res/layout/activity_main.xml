@@ -8,10 +8,10 @@
 
 
     <TextView
-        android:id="@+id/kitty_generator_header"
+        android:id="@+id/rick_and_morty_generator_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Kitty Generator!"
+        android:text="Rick and Morty character generator!"
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,28 +22,28 @@
 
 
     <ImageView
-        android:id="@+id/rdj_pic"
+        android:id="@+id/rick_and_morty_pic"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginTop="300dp"
-        android:src="@drawable/kitty"
+        android:src="@drawable/rick_and_morty"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/kitty_generator_header"
+        app:layout_constraintTop_toBottomOf="@id/rick_and_morty_generator_header"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/get_random_kitty"
+        android:id="@+id/get_random_rick_and_morty_pic"
         android:layout_width="220dp"
 
         android:layout_height="110dp"
         android:layout_marginStart="92dp"
-        android:text="Get a random picture of a kitten"
+        android:text="Get a random picture of a Rick and Morty character"
         android:textSize="25dp"
         android:backgroundTint="@color/french_rose"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/rdj_pic">
+        app:layout_constraintTop_toBottomOf="@id/rick_and_morty_pic">
 
     </Button>
 
