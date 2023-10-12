@@ -25,10 +25,10 @@
         android:id="@+id/rick_and_morty_pic"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginTop="200dp"
         android:src="@drawable/rick_and_morty"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.54"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rick_and_morty_generator_header"
         app:layout_constraintTop_toTopOf="parent" />
@@ -44,7 +44,42 @@
         android:backgroundTint="@color/french_rose"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rick_and_morty_pic">
-
     </Button>
+
+    <TextView
+        android:id="@+id/Character_Name"
+        app:layout_constraintTop_toBottomOf="@id/get_random_rick_and_morty_pic"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="#FF0000"
+        android:typeface="serif">
+    </TextView>
+
+    <TextView
+        android:id="@+id/Character_status"
+        app:layout_constraintTop_toBottomOf="@id/Character_Name"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#FF0000"
+        android:textSize="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:typeface="serif">
+    </TextView>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

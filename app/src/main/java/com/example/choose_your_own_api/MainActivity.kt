@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
@@ -15,6 +16,8 @@ class MainActivity : AppCompatActivity() {
 
 
     var Rickandmorty_pic_url = ""
+    var character_name = ""
+    var character_status = ""
 
 
 
@@ -35,14 +38,10 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    private fun getNextImage(button: Button, imageView: ImageView) {
+    private fun getNextImage(button: Button, imageView: ImageView,  ) {
         button.setOnClickListener {
             getRick_and_morty_Pic()
 
-            Glide.with(this)
-                .load(Rickandmorty_pic_url)
-                .fitCenter()
-                .into(imageView)
         }
     }
 
@@ -56,8 +55,27 @@ class MainActivity : AppCompatActivity() {
                 Log.d("Rick and morty", "response successful$json")
 
                 Rickandmorty_pic_url = json.jsonObject.getString("image")
+                character_name = json.jsonObject.getString("name")
+                character_status = json.jsonObject.getString("status")
+
+
+                runOnUiThread {
+                    Glide.with(this@MainActivity)
+                        .load(Rickandmorty_pic_url)
+                        .fitCenter()
+                        .into(findViewById(R.id.rick_and_morty_pic))
+
+                    findViewById<TextView>(R.id.Character_Name).text = character_name
+                    findViewById<TextView>(R.id.Character_status).text = character_status
+                }
+
+
+
 
             }
+
+
+
 
 
 
