@@ -42,7 +42,7 @@ My chosen API for this project is **https://rickandmortyapi.com/**.
 
 Here's a video / GIF that demos all of the app's implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Demo' width='' alt='Video Demo' />
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/Q9DxVj3"  ><a href="//imgur.com/a/Q9DxVj3">Rick_and_morty_generator</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 GIF created with **Loom**
 
